@@ -20,7 +20,7 @@ const Sidebar = (props) => {
   return (
     <>
       {/* Fixed icon on the right side of the screen */}
-      <div className={`group rounded-md mt-7 p-2 ${props.Sz} transition-all ease-in-out duration-300`}
+      <div className={`group rounded-md p-2 -mt-2 ${props.Sz} transition-all ease-in-out duration-300`}
         style={{
           position: "fixed",
           top: "20px",
@@ -31,7 +31,7 @@ const Sidebar = (props) => {
         }}
         onClick={toggleSidebar}
       >
-        <Bars3BottomRightIcon className= 'group-[.tny]:size-8 size-10  transition-all duration-300 ease-in-out' color="#fff" />
+        <Bars3BottomRightIcon className= 'group-[.tny]:size-6 size-10  transition-all duration-300 ease-in-out' color="#fff" />
       </div>
 
       {/* Main Sidebar */}
