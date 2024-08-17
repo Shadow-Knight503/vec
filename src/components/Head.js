@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
 import Sidebar from './SideBar'
-// import { componentWillUnmount }
+import Nord from './assests/1723802229690.png'
+import Naac from './assests/1723802229711.png'
+import Acrd from './assests/1723802229732.png'
+import Tnea from './assests/TNEA-Code.png'
+ // import { componentWillUnmount }
 
 const Head = () => {
     const [scroll, setScroll] = useState(0)
     const [hdr, setHdr] = useState("h-20")
 
-    const hdrs = ["More", "Less", "Why the College stinks", "Upsides vs Downsides", "Last one ?", "Nah kidding"]
+    const nacs = [Naac, Acrd,  Nord, Tnea]
     const navs = ["Academics", "Admissions", "COE", "Placements"]
 
     const hndlScrll = () => {
@@ -38,21 +42,29 @@ const Head = () => {
                     </div>
             </div> */}
             <nav className={'flex font-comf group bg-slate-200 z-[100] text-slate-200 transition-all ease-in-out duration-300 w-full fixed ' + 
-                    'rounded-b-lg border-b-2 border-slate-800 ' + hdr}>
+                    'rounded-b-lg border-b-2 border-slate-800 overflow-y-hidden ' + hdr}>
                 <div className='bg-inherit z-10 justify-self-start'>
                     <img src='https://res.cloudinary.com/meme-topia/image/upload/v1723784096/image-removebg-preview_ciglfw.png' alt='Vec Logo'
                         className='group-[.hide]:w-[2.5rem] group-[.hide]:h-[2.5rem] z-10 duration-300 ease-in-out transition-all w-[5rem] h-[5rem]'></img>
                 </div>    
-                <div className='grid grid-rows-1 ml-2 mr-[25vw] group-[.hide]:-translate-x-[20vw] duration-500 ease-out transition-all'>
+                <div className='w-fit grid grid-rows-1 ml-2 group-[.hide]:-mt-1.5 duration-300 ease-out transition-all'>
                     <p className='mt-3 font-rome text-2xl text-amber-800'>VELAMMAL</p>
-                    <p className='font-rome text-black text-xs'>ENGINEERING COLLEGE</p>
+                    <p className='font-rome text-black text-xs group-[.hide]:-translate-x-[20vw] transition-all ease-in-out duration-300'>ENGINEERING COLLEGE</p>
+                </div>
+                <div class="flex relative h-full justify-center group-[.hide]:-mt-2 min-w-[10rem] ml-[1.5rem] mr-[10vw]">
+                    {nacs.map((nac, i) => (
+                        <div class="duration-200 ease-linear" data-carousel-item>
+                            <img src={nac} class="block max-h-[4rem] mt-2 h-full w-full p-1" alt="naac" key="naac" />
+                        </div>
+                    ))}
                 </div>
                 <div className='flex-1 mr-8'>
-                    <div className='flex group-[.hide]:text-lg transition-all text-2xl justify-end h-full gap-4'>
+                    <div className='flex group-[.hide]:text-xl duration-300 ease-in-out transition text-2xl mt-0 justify-end h-full gap-4'>
                         {navs.map((nvt) => (
-                            <p className='text-slate-950 pt-2 align-middle relative text-center self-center my-auto inline border w-fit px-4 hover:after:scale-y-100 
-                                bg-slate-300 min-h-full flex-end after:content-[""] after:absolute after:w-full after:h-full after:origin-bottom after:scale-y-0 after:bg-amber-500
-                                after:-z-10 z-10 after:left-0 after:bottom-0 after:duration-300 after:transition-all after:ease-in duration-300 transition-all'>{nvt}</p>
+                            <p className='pt-2 align-middle relative pt-4 top-4 group-[.hide]:top-1 self-center w-fit px-4 
+                                hover:bg-[position:100%_0%] text-transparent 
+                                bg-gradient-to-l from-amber-500 from-50% via-black via-50% to-black to-90% bg-clip-text bg-[position:0%_0%] bg-[length:200%_100%]
+                                min-h-[120%] flex-end hover:ease-out hover:duration-700 ease-in-out duration-300 transition-all'>{nvt}</p>
                         ))}
                     </div>
                 </div>
