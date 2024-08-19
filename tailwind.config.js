@@ -8,6 +8,9 @@ module.exports = {
       'rome': ['Times New Roman', 'ui-sans-serif', 'system-ui'],
       'comf': ['Comfortaa', 'ui-sans-serif', 'system-ui']
     },
+    transitionProperty: {
+      'ht': 'height',
+    },
     extend: {},
   },
   plugins: [],
