@@ -14,7 +14,7 @@ const ImgSld = () => {
       <div className="flex justify-items-stretch bg-none bg-transparent bg-[left_7.5vmax_top_0vmax] bg-no-repeat bg-[length:50%_auto] bg-[position:45px_auto] 
         lg:bg-[url('https://res.cloudinary.com/meme-topia/image/upload/v1723874118/30__yearold_man_acting_like_college_gldva8.png')] w-[100vw]">
         <div className="w-[100vw]">
-          <h2 className="quote md:block hidden left-[5rem] lg:max-w-[25vmax] max-w-[30vmax] text-[1.9vmax] lg:text-[1.55vmax] font-rome absolute">
+          <h2 className="quote md:block hidden left-[2rem] lg:max-w-[27.5vmax] max-w-[35vmax] text-[1.9vmax] lg:text-[1.55vmax] font-rome absolute">
             <span className='block font-bold pb-1 text-[2vmax] lg:text-[1.65vmax]'>Our Vission:</span>
             “To educate the student community both by theory and practice to fit in with the society and to conquer tomorrow’s technology at global level with human values through our dedicated team.”</h2>
          </div>

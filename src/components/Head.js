@@ -24,25 +24,29 @@ const Head = () => {
         {Name: "LinkedIn", Link: "https://instagram.com", Ico: Lknd},
     ]
     const navs = [
-        {main: "Academics", sub: [{ttl: 'Bad Subjects', lnk: 'https://velammal.edu.in/'}, {ttl: 'Useless Subjects', lnk: 'https://velammal.edu.in/'}, 
-            {ttl: 'Boring Subjects', lnk: 'https://velammal.edu.in/'}, {ttl: 'Broken Labs', lnk: 'https://velammal.edu.in/'}, 
-            {ttl: 'No Air Conditioning', lnk: 'https://velammal.edu.in/'}, {ttl: 'Back breaking academics', lnk: 'https://velammal.edu.in/'}
+        {main: "Academics", sub: [{ttl: 'Bad Subjects', sup: [
+                {ttl: 'Windows XP and how it works (CSE)', lnk: 'https://velammal.edu.in/'}, {ttl: 'Screwing Stuff ?! (Mech)', lnk: 'https://velammal.edu.in/'},
+                {ttl: 'More IF loops please (AIDS, not the disease)', lnk: 'https://velammal.edu.in/'}, {ttl: 'CSE\'s lil brother (IT)', lnk: 'https://velammal.edu.in/'},
+                {ttl: 'Something about sensors (ECE)', lnk: 'https://velammal.edu.in/'},
+            ], lnk: ''}, {ttl: 'Useless Subjects', sup: [], lnk: 'https://velammal.edu.in/'}, 
+            {ttl: 'Boring Subjects', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Broken Labs', sup: [], lnk: 'https://velammal.edu.in/'}, 
+            {ttl: 'No Air Conditioning', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Back breaking academics', sup: [], lnk: 'https://velammal.edu.in/'}
         ]}, 
-        {main: "Admissions", sub: [{ttl: 'Run', lnk: 'https://velammal.edu.in/'}, {ttl: 'This is your', lnk: 'https://velammal.edu.in/'},
-            {ttl: 'Last Chance', lnk: 'https://velammal.edu.in/'}, {ttl: 'RUNNNN!', lnk: 'https://velammal.edu.in/'},
+        {main: "Admissions", sub: [{ttl: 'Run', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'This is your', sup: [], lnk: 'https://velammal.edu.in/'},
+            {ttl: 'Last Chance', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'RUNNNN!', sup: [], lnk: 'https://velammal.edu.in/'},
         ]}, 
-        {main: "COE", sub: [{ttl: 'Student Login', lnk: 'https://velammal.edu.in/'}, {ttl: 'Staff Login', lnk: 'https://velammal.edu.in/'}]}, 
-        {main: "Placements", sub: [{ttl: '404 Not Found', lnk: 'https://velammal.edu.in/'},]}, 
-        {main: "Research", sub: [{ttl: 'Fake Experiments', lnk: 'https://velammal.edu.in/'}, {ttl: 'AI generated papers', lnk: 'https://velammal.edu.in/'},
-            {ttl: 'Fudged Lab results', lnk: 'https://velammal.edu.in/'}, {ttl: 'Dusty Documents', lnk: 'https://velammal.edu.in/'},
+        {main: "COE", sub: [{ttl: 'Student Login', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Staff Login', sup: [], lnk: 'https://velammal.edu.in/'}]}, 
+        {main: "Placements", sub: [{ttl: '404 Not Found', sup: [], lnk: 'https://velammal.edu.in/'},]}, 
+        {main: "Research", sub: [{ttl: 'Fake Experiments', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'AI generated papers', sup: [], lnk: 'https://velammal.edu.in/'},
+            {ttl: 'Fudged Lab results', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Dusty Documents', sup: [], lnk: 'https://velammal.edu.in/'},
         ]}, 
-        {main: "Torture", sub: [{ttl: 'Classes', lnk: 'https://velammal.edu.in/'}, {ttl: 'Subjects', lnk: 'https://velammal.edu.in/'}, 
-            {ttl: 'Management', lnk: 'https://velammal.edu.in/'}, {ttl: 'College', lnk: 'https://velammal.edu.in/'}
+        {main: "Torture", sub: [{ttl: 'Classes', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Subjects', sup: [], lnk: 'https://velammal.edu.in/'}, 
+            {ttl: 'Management', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'College', sup: [], lnk: 'https://velammal.edu.in/'}
         ]}, 
-        {main: "Boredom", sub: [{ttl: 'Lack of events', lnk: 'https://velammal.edu.in/'}, {ttl: 'Lack of activities', lnk: 'https://velammal.edu.in/'},
-            {ttl: 'Lack of free time', lnk: 'https://velammal.edu.in/'}, {ttl: 'Lack of fun', lnk: 'https://velammal.edu.in/'},
+        {main: "Boredom", sub: [{ttl: 'Lack of events', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Lack of activities', sup: [], lnk: 'https://velammal.edu.in/'},
+            {ttl: 'Lack of free time', sup: [], lnk: 'https://velammal.edu.in/'}, {ttl: 'Lack of fun', sup: [], lnk: 'https://velammal.edu.in/'},
         ]}, 
-        {main: "Hope Revial", sub: [{ttl: 'There\'s no hope', lnk: 'https://velammal.edu.in/'}]}, 
+        {main: "Hope Revial", sub: [{ttl: 'There\'s no hope', sup: [], lnk: 'https://velammal.edu.in/'}]}, 
     ]
 
     const hndlScrll = () => {
@@ -79,9 +83,9 @@ const Head = () => {
                         <img src='https://res.cloudinary.com/meme-topia/image/upload/v1723784096/image-removebg-preview_ciglfw.png' alt='Vec Logo'
                             className='group-[.hide]:w-[2.5rem] group-[.hide]:h-[2.5rem] z-10 duration-300 ease-in-out transition-all w-[6.5vmax] h-auto'></img>
                     </div>    
-                    <div className='w-fit h-auto grid grid-cols-1 content-center relative group-[.hide]:-mt-1.5 duration-300 ease-out transition-all'>
-                        <span className='font-rome h-fit text-[2vmax] text-amber-800'>VELAMMAL</span>
-                        <span className='font-rome h-fit text-black text-[1vmax] group-[.hide]:-translate-x-[20vw] transition-all ease-in-out duration-300'>ENGINEERING COLLEGE</span>
+                    <div className='w-fit h-auto grid grid-cols-1 gap-y-0 content-center relative group-[.hide]:-mt-1.5 duration-300 ease-out transition-all'>
+                        <span className='font-rome text-[2vmax] text-amber-800 p-0 -mb-[0.75vmax]'>VELAMMAL</span>
+                        <span className='font-rome text-black text-[1vmax] mt-0 p-0 transition-all ease-in-out duration-300'>ENGINEERING COLLEGE</span>
                     </div>
                     <div class="items-stretch relative h-max my-auto pb-2 group-[.hide]:-mt-2 lg:max-w-[17.5vw] max-w-[20.5vw] ml-2 sm:flex hidden">
                         {nacs.map((nac, i) => (
@@ -103,15 +107,31 @@ const Head = () => {
                                         bg-gradient-to-l from-amber-500 from-50% via-black via-50% to-black to-90% bg-clip-text bg-[position:0%_0%] bg-[length:200%_100%]
                                         hover:ease-out hover:duration-700 ease-in-out duration-300`}>{nvt.main}
                                         <ChevronDoubleDownIcon className='size-[1.3vmax] mb-1 ml-1 inline text-black'></ChevronDoubleDownIcon></p>  
-                                    <div className={`grid grid-flow-row rounded-lg bg-slate-200 overflow-y-hidden outline group-hover/nav:outline-yellow-600 outline-transparent 
-                                        right-0 top-10 w-fit h-fit z-30 absolute group-hover/nav:max-h-[70vh] max-h-0 h-fit bg-slate-600 outline-offset-2
-                                        duration-500 ease-in transiton-[ht]`}>
+                                    <div className={`grid grid-flow-row rounded-lg bg-slate-200 outline group-hover/nav:outline-yellow-600 
+                                        outline-transparent right-0 top-10 w-fit h-fit absolute group-hover/nav:max-h-[70vh] max-h-0 h-fit w-fit bg-slate-600 outline-offset-2
+                                        group-hover/nav:w-fit duration-500 ease-in transiton-[ht]`} style={{clipPath: 'inset( -100vw -100vw -100vw -0.25vw )'}}>
                                             {nvt.sub.map((sbj, i, { length }) => (
-                                                <a className={`no-underline inline-block bg-[length:200%_100%] bg-[position:0%_100%] text-slate-200 -translate-x-[20vw] px-2
-                                                    ${( i !== length - 1) ? 'border-b': ''} bg-gradient-to-l from-amber-600 from-0% via-amber-600 via-50% to-slate-600 to-50% 
-                                                    w-full group-hover/nav:translate-x-0 duration-300 ease-in transition-all hover:bg-[position:-100%_100%]`} 
-                                                    style={{transitionDelay: `${100 * i}ms`}} 
-                                                    key={sbj.ttl} href={sbj.lnk}><p className='w-fit my-2 text-right align-middle text-nowrap'>{sbj.ttl}</p></a>
+                                                <div className='group/sub relative'>
+                                                    <a className={`no-underline inline-block bg-[length:200%_100%] bg-[position:0%_100%] text-slate-200 -translate-x-[20vw] px-2 rounded-lg
+                                                        ${( i !== length - 1) ? 'border-b': ''} bg-gradient-to-l from-amber-600 from-0% via-amber-600 via-50% to-slate-600 to-50% 
+                                                        w-full group-hover/nav:translate-x-0 z-[500] duration-300 ease-in transition-all hover:bg-[position:-100%_100%]`} 
+                                                        style={{transitionDelay: `${100 * i}ms`}} 
+                                                        key={sbj.ttl} href={sbj.lnk}><p className='w-fit my-2 text-right align-middle text-nowrap'>{sbj.ttl}</p></a>
+                                                    <div className={`grid grid-flow-row rounded-lg bg-slate-200 outline group-hover/sub:outline-yellow-600 outline-transparent 
+                                                        -right-[57.5%] top-0 absolute group-hover/sub:max-h-[70wh] z-[-100] max-h-0 h-fit w-fit bg-slate-600 outline-offset-2
+                                                        duration-500 ease-in transiton-[ht]`}>
+                                                            {sbj.sup.map((spj, i, { length }) => (
+                                                                <div>
+                                                                    <a className={`no-underline inline-block bg-[length:200%_100%] bg-[position:0%_100%] text-slate-200 -translate-x-[30vw] px-2 
+                                                                        ${( i !== length - 1) ? 'border-b': ''} bg-gradient-to-l from-amber-600 from-0% via-amber-600 via-50% to-slate-600 to-50% 
+                                                                        w-full group-hover/sub:translate-x-0 duration-300 ease-in transition-all hover:bg-[position:-100%_100%]`} 
+                                                                        style={{transitionDelay: `${100 * i}ms`}} 
+                                                                        key={spj.ttl} href={spj.lnk}><p className='w-fit my-2 text-right align-middle text-nowrap'>{sbj.ttl}</p></a>
+                                                                    
+                                                                </div>
+                                                            ))}
+                                                    </div>
+                                                </div>
                                             ))}
                                     </div>
                                 </div>
@@ -119,8 +139,8 @@ const Head = () => {
                         {/* </div> */}
                     </div>
                 </div>
-                    {/* <div className='group-[.hide]:size-5 duration-300 ease-in-out transition-all size-12 border-black m-3 h-fit rounded-md'>
-                <Sidebar Sz={((hdr === "h-20") ? "fll": "tny p-0 -mt-4")} /></div>         */}
+                <div className='block lg:hidden mt-[2vmax] duration-300 ease-in-out transition-all size-12 border-black m-3 h-fit rounded-md'>
+                    <Sidebar Sz={((hdr === "h-20") ? "fll": "tny p-0")} /></div>        
             </nav>
         </> 
     )
